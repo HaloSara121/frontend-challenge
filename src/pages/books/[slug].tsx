@@ -24,7 +24,13 @@ export default function Books({ book }: BooksProps) {
             <BiArrowBack size="20" />
           </Link>
 
-          <img src={book.volumeInfo.imageLinks?.thumbnail} />
+          <img  
+            src={
+              book.volumeInfo.imageLinks?.thumbnail 
+                ? book.volumeInfo.imageLinks?.thumbnail
+                : "/assets/noImage.png" 
+            } 
+          />
           {!isMobile && (
             <ul>
               <li>Read</li>
