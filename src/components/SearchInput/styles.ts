@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.form`
   height: 3rem;
   display: flex;
+  align-items: center;
   margin: 3.5rem 1.5rem 2.2rem;
   padding-right: 10px;
   background: ${(props) => props.theme.colors.inputBackground};
@@ -15,10 +16,15 @@ export const Container = styled.form`
     margin: 1rem;
   }
 
+  svg:hover{
+    transform: scale(1.2);
+  }
+
   @media (min-width: 1024px) {
     width: 400px;
     margin: 2.2rem 1.25rem 1.6rem 18.75rem;
   }
+
 `;
 
 export const SearchInputComponent = styled.input`
