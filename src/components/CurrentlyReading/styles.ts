@@ -23,6 +23,7 @@ export const InfoCard = styled.div`
     background: ${props.theme.colors.infoCard};
 
     img {
+
       width: 91px;
       height: 136px;
 

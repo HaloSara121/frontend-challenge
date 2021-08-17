@@ -25,6 +25,10 @@ export const Container = styled.section`
     img {
       margin-top: 1rem;
 
+      &:hover {
+        transform: scale(1.1);
+      }
+
       @media (min-width: 1024px) {
         margin-right: 1rem;
       }

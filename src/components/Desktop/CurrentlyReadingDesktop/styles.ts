@@ -18,12 +18,16 @@ export const InfoCard = styled.div`
 
   box-shadow: 0px 3px 45px 0px #798d431d;
 
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0.5rem;
 
   ${(props) => css`
     background: ${props.theme.colors.infoCard};
 
     img {
+      &:hover {
+        transform: scale(1.2);
+      }
+
       width: 91px;
       height: 136px;
 
