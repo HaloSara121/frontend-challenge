@@ -22,7 +22,7 @@ export function Header() {
             </Link>
             <Link href="/">
               <a>
-                <li>Librarie</li>
+                <li>Library</li>
               </a>
             </Link>
             <Link href="/profile">

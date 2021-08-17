@@ -32,7 +32,7 @@ export const SearchInputComponent = styled.input`
   border: none;
   outline: none;
   background: transparent;
-  border-radius: 0.6rem;
+  border-radius: 0 0.6rem 0.6rem 0;
 
   &::placeholder {
     color: ${(props) => props.theme.colors.placeholder};

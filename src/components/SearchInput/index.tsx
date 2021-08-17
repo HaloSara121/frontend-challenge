@@ -18,7 +18,7 @@ export function SearchInput() {
         }}
       />
       { search &&
-        <CgClose size="24 " onClick={() => setSearch('')}/>
+        <CgClose size="24" onClick={() => setSearch('')}/>
       }
     </Container>
   );
