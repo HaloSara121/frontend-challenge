@@ -30,10 +30,12 @@ export function SearchResultProvider({ children }: SearchResultProviderProps) {
 
   useEffect(() => {
     getBooks()
+
   }, [search]);
 
   useEffect(() => {
     getMoreBooks()
+    
   }, [maxResults])
 
   async function getMoreBooks() {

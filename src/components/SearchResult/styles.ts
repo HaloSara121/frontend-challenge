@@ -15,6 +15,17 @@ export const Container = styled.main`
   @media (min-width: 1024px) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+
+  button {
+    margin: auto;
+    padding: 1rem ;
+
+    border: none;
+    border-radius: .5rem;
+
+    background: lightgoldenrodyellow;
+    color: var(--title);
+  }
 `;
 
 export const Card = styled.article`
