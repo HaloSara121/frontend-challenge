@@ -9,13 +9,13 @@ import { SearchInput } from "../components/SearchInput";
 import { BooksSlide } from "../components/BooksSlide";
 import { CurrentlyReading } from "../components/CurrentlyReading";
 import { ReviewVideos } from "../components/ReviewVideos";
-import { api } from "../services/api";
 import { SearchResult } from "../components/SearchResult";
-import { BookType } from "../types/Book";
 import { useWindowDimensions } from "../hooks/useWindowDimensions";
 import { useSearchResult } from "../hooks/useSearchResult";
+import { api } from "../services/api";
+import { GetStaticProps } from "next";
 
-export default function Home() {
+export default function Home({cardBooks}) {
   const { search } = useSearchResult();
   const { width } = useWindowDimensions();
 
@@ -48,7 +48,7 @@ export default function Home() {
                   </Link>
                 </Heading>
 
-                <BooksSlide />
+                <BooksSlide books={cardBooks} />
               </section>
               <section>
                 <Heading>
@@ -74,17 +74,32 @@ export default function Home() {
   );
 }
 
-// export const getStaticPaths: GetStaticPaths = async () => {
-//   return{
-//     paths: [],
-//     fallback: 'blocking'
-//   }
-// }
+export const getStaticProps: GetStaticProps = async () => {
 
-// export const getStaticProps: GetStaticProps = async () => {
+  const book1 = await api
+      .get(`https://www.googleapis.com/books/v1/volumes/dsz5AwAAQBAJ`)
+      .then((res) => res.data);
 
-//   return {
-//     props: {
-//     }
-//   }
-// }
+  const book2 = await api
+      .get(`https://www.googleapis.com/books/v1/volumes/eLRhDgAAQBAJ`)
+      .then((res) => res.data);
+
+  const book3 = await api
+      .get(`https://www.googleapis.com/books/v1/volumes/zDJTAAAAMAAJ`)
+      .then((res) => res.data);
+
+  const book4 = await api
+      .get(`https://www.googleapis.com/books/v1/volumes/3J3WAAAAMAAJ`)
+      .then((res) => res.data);
+
+  return {
+    props: {
+      cardBooks: [
+        book1,
+        book2,
+        book3,
+        book4,
+      ]
+    }
+  }
+}

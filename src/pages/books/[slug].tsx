@@ -25,11 +25,13 @@ export default function Books({ book }: BooksProps) {
           </Link>
 
           <img src={book.volumeInfo.imageLinks?.thumbnail} />
-          <ul>
-            <li>Read</li>
-            <li>Listen</li>
-            <li>Share</li>
-          </ul>
+          {!isMobile && (
+            <ul>
+              <li>Read</li>
+              <li>Listen</li>
+              <li>Share</li>
+            </ul>
+          )}
         </div>
       </ContainerHeader>
 
