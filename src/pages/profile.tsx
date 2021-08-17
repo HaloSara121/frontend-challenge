@@ -10,10 +10,9 @@ import {
   SwitchContainer,
 } from "../styles/profile";
 
-import Link from "next/link";
-import { BiArrowBack } from "react-icons/bi";
 import { useWindowDimensions } from "../hooks/useWindowDimensions";
 import { Header } from "../components/Desktop/Header";
+import Head from "next/head";
 
 export default function Profile() {
   const { width } = useWindowDimensions();
@@ -25,6 +24,11 @@ export default function Profile() {
 
   return (
     <>
+
+      <Head>
+        <title>Profile | FotonBooks</title>
+      </Head>
+
       {!isMobile && <Header />}
 
       <Container>

@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -12,10 +11,8 @@ import { ReviewVideos } from "../components/ReviewVideos";
 import { SearchResult } from "../components/SearchResult";
 import { useWindowDimensions } from "../hooks/useWindowDimensions";
 import { useSearchResult } from "../hooks/useSearchResult";
-import { api } from "../services/api";
-import { GetStaticProps } from "next";
 
-export default function Home({cardBooks}) {
+export default function Home() {
   const { search } = useSearchResult();
   const { width } = useWindowDimensions();
 
@@ -26,6 +23,7 @@ export default function Home({cardBooks}) {
       <Head>
         <title>Home | FotonBooks</title>
       </Head>
+      
       {isMobile ? (
         <Container>
           <SearchInput />
@@ -48,7 +46,7 @@ export default function Home({cardBooks}) {
                   </Link>
                 </Heading>
 
-                <BooksSlide books={cardBooks} />
+                <BooksSlide />
               </section>
               <section>
                 <Heading>
@@ -72,34 +70,4 @@ export default function Home({cardBooks}) {
       )}
     </>
   );
-}
-
-export const getStaticProps: GetStaticProps = async () => {
-
-  const book1 = await api
-      .get(`https://www.googleapis.com/books/v1/volumes/dsz5AwAAQBAJ`)
-      .then((res) => res.data);
-
-  const book2 = await api
-      .get(`https://www.googleapis.com/books/v1/volumes/eLRhDgAAQBAJ`)
-      .then((res) => res.data);
-
-  const book3 = await api
-      .get(`https://www.googleapis.com/books/v1/volumes/zDJTAAAAMAAJ`)
-      .then((res) => res.data);
-
-  const book4 = await api
-      .get(`https://www.googleapis.com/books/v1/volumes/3J3WAAAAMAAJ`)
-      .then((res) => res.data);
-
-  return {
-    props: {
-      cardBooks: [
-        book1,
-        book2,
-        book3,
-        book4,
-      ]
-    }
-  }
 }

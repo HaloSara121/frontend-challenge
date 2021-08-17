@@ -2,15 +2,10 @@ import { BiBarChartSquare } from "react-icons/bi";
 import { Container, BookCard, BookCardFooter } from "./styles";
 import Carousel from "react-elastic-carousel";
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";
-import { BookType } from "../../types/Book";
 
 const breakPoints = [{ width: 374, itensToShow: 1 }];
 
-interface BooksSlideProps{
-  books: BookType[]
-}
-
-export function BooksSlide({books}: BooksSlideProps) {
+export function BooksSlide() {
   const { width } = useWindowDimensions();
   const isMobile = width > 1024 ? false : true;
 
