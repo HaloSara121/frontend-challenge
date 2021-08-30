@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  div {
-    margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  div {
+    margin-bottom: 8px;
+    
     div {
       display: flex;
       justify-content: space-between;
@@ -23,7 +27,11 @@ export const Container = styled.section`
     }
 
     img {
+      width: 335px;
+      height: 187px;
       margin-top: 1rem;
+
+      border-radius: 8px;
 
       &:hover {
         transform: scale(1.1);

@@ -10,11 +10,12 @@ export function SearchInput() {
 
   const [displayValue, setDisplayValue] = useState("");
   const debouncedChange = useDebounce(setSearch, 500);
+  const setMaxResultsDebounce = useDebounce(setMaxResults, 500)
 
   function handleChange(event) {
     setDisplayValue(event.target.value);
     debouncedChange(event.target.value);
-    setMaxResults(18)
+    setMaxResultsDebounce(18)
   }
 
   return (

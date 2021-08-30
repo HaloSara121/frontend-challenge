@@ -4,7 +4,7 @@ import { Container, InfoCard } from "./styles";
 export function CurrentlyReading() {
   return (
     <Container>
-      <InfoCard>
+      <InfoCard href="/books/eLRhDgAAQBAJ">
         <img src="/assets/book2.png" alt="book2" />
         <div>
           <h1>Originals</h1>

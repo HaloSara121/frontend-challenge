@@ -6,10 +6,11 @@ export const Container = styled.div`
   align-items: center;
 
   margin-left: -1.5rem;
-  margin-top: 6rem;
+  margin-top: 5.5rem;
+
 `;
 
-export const InfoCard = styled.div`
+export const InfoCard = styled.a`
   width: 331px;
   max-height: 100px;
 
@@ -20,18 +21,30 @@ export const InfoCard = styled.div`
 
   border-radius: 0.5rem;
 
+  
   ${(props) => css`
-    background: ${props.theme.colors.infoCard};
+  background: ${props.theme.colors.infoCard};
+  
+    background-image: 
+      url("/assets/rectangle.svg"),
+      url("/assets/oval.svg"), 
+      url("/assets/oval-card2.svg");
 
-    img {
+    background-repeat: no-repeat;
+
+    background-position: 107% 65%, 110% -100% , 75% -7%;
+
+    img { 
+      width: 91px;
+      height: 136px;
+      
+      margin-left: 1.5rem;
+
+      border-radius: 5px;
+
       &:hover {
         transform: scale(1.2);
       }
-
-      width: 91px;
-      height: 136px;
-
-      margin-left: 1.5rem;
     }
 
     & > div {
@@ -44,7 +57,7 @@ export const InfoCard = styled.div`
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 2rem;
-        color: var(--title);
+        color: ${props.theme.colors.infoCardText};
       }
 
       p {
@@ -58,6 +71,8 @@ export const InfoCard = styled.div`
         align-items: center;
 
         margin-top: 1.8rem;
+
+        color: ${props.theme.colors.infoCardText};
 
         & > span {
           margin-left: 0.5rem;

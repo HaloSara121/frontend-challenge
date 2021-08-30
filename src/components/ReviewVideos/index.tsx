@@ -19,18 +19,20 @@ export function ReviewVideos() {
           )}
         </div>
         <Link href="https://www.youtube.com/watch?v=vBzBgewl4ac">
-          <a>
+          <a target="__blank">
             <img src="/assets/thumb1.png" />
           </a>
         </Link>
-        <Link href="https://www.youtube.com/watch?v=vBzBgewl4ac">
-          <a>
-            <img src="/assets/thumb1.png" />
+
+        <Link href="https://www.youtube.com/watch?v=pNar3Dh9zDk">
+          <a target="__blank">
+            <img src="/assets/review.jpg" />
           </a>
         </Link>
-        <Link href="https://www.youtube.com/watch?v=vBzBgewl4ac">
-          <a>
-            <img src="/assets/thumb1.png" />
+
+        <Link href="https://www.youtube.com/watch?v=hHRDnHto7MQ">
+          <a target="__blank">
+            <img src="/assets/review2.jpg" />
           </a>
         </Link>
       </div>

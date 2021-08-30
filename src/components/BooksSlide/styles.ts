@@ -28,7 +28,7 @@ export const Container = styled.div`
   }
 `;
 
-export const BookCard = styled.div`
+export const BookCard = styled.a`
   display: flex;
   
   min-width: 272px;
@@ -43,13 +43,15 @@ export const BookCard = styled.div`
   
   color: #fff;
   
-  background-image: url("/assets/path.svg"), url("/assets/rectangle.svg"),
-    url("/assets/oval-card.svg"), url("/assets/oval-card2.svg");
+  background-image: 
+    url("/assets/path.svg"),
+    url("/assets/rectangle.svg"),
+    url("/assets/oval-card.svg"), 
+    url("/assets/oval-card2.svg");
   
   background-repeat: no-repeat;
+  background-position: 67% 1%, 52% 75%, 1% 88%, 49% 10%;
 
-  
-  background-position: 61% -4%, 52% 75%, 1% 88%, 49% 10%;
   div {
     margin-bottom: 1.5rem;
     margin-top: -0.3rem;
@@ -68,6 +70,7 @@ export const BookCard = styled.div`
     margin-top: -8px;
     width: 72px;
     height: 111px;
+    border-radius: 6px;
   }
   & + & {
     margin-left: 1.5rem;
@@ -78,6 +81,7 @@ export const BookCardFooter = styled.div`
   display: flex;
   align-items: center;
   gap: 0.2rem;
+
   span {
     margin-top: 1.375rem;
   }

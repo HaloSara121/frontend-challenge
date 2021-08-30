@@ -5,7 +5,7 @@ import { BiBookBookmark } from "react-icons/bi";
 export function CurrentlyReadingDesktop() {
   return (
     <Container>
-      <InfoCard>
+      <InfoCard href="/books/eLRhDgAAQBAJ">
         <img src="/assets/book2.png" alt="book2" />
         <div>
           <h1>Originals</h1>
@@ -18,10 +18,10 @@ export function CurrentlyReadingDesktop() {
           </div>
         </div>
       </InfoCard>
-      <InfoCard>
-        <img src="/assets/book2.png" alt="book2" />
+      <InfoCard href="/books/I-Eyh1B0qLoC">
+        <img src="/assets/sereia.jpg" alt="book2" />
         <div>
-          <h1>Originals</h1>
+          <h1>A Sereia</h1>
           <p>by Adam Grant</p>
           <div>
             <BiBookBookmark />

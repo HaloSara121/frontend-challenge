@@ -8,7 +8,7 @@ export const Container = styled.div`
   margin-top: 1rem;
 `;
 
-export const InfoCard = styled.div`
+export const InfoCard = styled.a`
   width: 331px;
   max-height: 100px;
 
@@ -23,11 +23,12 @@ export const InfoCard = styled.div`
     background: ${props.theme.colors.infoCard};
 
     img {
-
       width: 91px;
       height: 136px;
 
       margin-left: 1.5rem;
+
+      
     }
 
     & > div {
@@ -40,7 +41,7 @@ export const InfoCard = styled.div`
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 2rem;
-        color: var(--title);
+        color: ${props.theme.colors.infoCardText};
       }
 
       p {

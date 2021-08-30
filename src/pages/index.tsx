@@ -29,7 +29,6 @@ export default function Home() {
           <SearchInput />
 
           {/* TODO:
-            Copiar debounce,
             slide bom,
             style current read,
             redirecionamento card,
@@ -42,7 +41,7 @@ export default function Home() {
             <Content>
               <Greeatings>
                 <h1>
-                  Hi, <span>Fotontech</span>👋
+                  Hi, <span>Vinicius Page</span>👋
                 </h1>
               </Greeatings>
 
