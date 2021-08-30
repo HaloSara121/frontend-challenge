@@ -1,9 +1,21 @@
+import { CgClose } from 'react-icons/cg'
+import { useState } from "react";
+
+import { useDebounce } from '../../hooks/useDebounce'
 import { useSearchResult } from "../../hooks/useSearchResult";
 import { Container, SearchInputComponent } from "./styles";
-import { CgClose } from 'react-icons/cg'
 
 export function SearchInput() {
-  const { search, setSearch, setMaxResults } = useSearchResult();
+  const { setSearch, setMaxResults } = useSearchResult();
+
+  const [displayValue, setDisplayValue] = useState("");
+  const debouncedChange = useDebounce(setSearch, 500);
+
+  function handleChange(event) {
+    setDisplayValue(event.target.value);
+    debouncedChange(event.target.value);
+    setMaxResults(18)
+  }
 
   return (
     <Container>
@@ -11,14 +23,14 @@ export function SearchInput() {
       <SearchInputComponent
         placeholder="Search book"
         maxLength={255}
-        value={search}
-        onChange={(e) => {
-          setSearch(e.target.value)
-          setMaxResults(18)
-        }}
+        value={displayValue}
+        onChange={handleChange}
       />
-      { search &&
-        <CgClose size="24" onClick={() => setSearch('')}/>
+      { displayValue &&
+        <CgClose size="24" onClick={() => {
+          setDisplayValue('')
+          setSearch('')
+        }}/>
       }
     </Container>
   );

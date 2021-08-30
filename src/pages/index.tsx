@@ -28,6 +28,14 @@ export default function Home() {
         <Container>
           <SearchInput />
 
+          {/* TODO:
+            Copiar debounce,
+            slide bom,
+            style current read,
+            redirecionamento card,
+            mudar videos,
+          */}
+
           {search ? (
             <SearchResult />
           ) : (

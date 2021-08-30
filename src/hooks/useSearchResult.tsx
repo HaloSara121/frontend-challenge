@@ -30,7 +30,7 @@ export function SearchResultProvider({ children }: SearchResultProviderProps) {
 
   useEffect(() => {
     getBooks()
-
+    console.log(books)
   }, [search]);
 
   useEffect(() => {
