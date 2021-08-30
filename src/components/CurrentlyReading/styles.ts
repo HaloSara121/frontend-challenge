@@ -22,13 +22,20 @@ export const InfoCard = styled.a`
   ${(props) => css`
     background: ${props.theme.colors.infoCard};
 
+    background-image: 
+      url("/assets/rectangle.svg"),
+      url("/assets/oval.svg"), 
+      url("/assets/oval-card2.svg");
+
+    background-repeat: no-repeat;
+
+    background-position: 107% 65%, 110% -100% , 75% -7%;
+
     img {
       width: 91px;
       height: 136px;
 
       margin-left: 1.5rem;
-
-      
     }
 
     & > div {

@@ -51,7 +51,7 @@ export function BooksSlide() {
             <BookCard href="/books/KnRbAAAAMAAJ">
               <div>
                 <div>
-                  <h1>Ha Ha Tonka</h1>
+                  <h1>Tonka</h1>
                   <p>Ryan G. Van Cleave</p>
                 </div>
                 <BookCardFooter>
@@ -110,7 +110,7 @@ export function BooksSlide() {
             <BookCard href="/books/KnRbAAAAMAAJ">
               <div>
                 <div>
-                  <h1>Ha Ha Tonka</h1>
+                  <h1>Tonka</h1>
                   <p>Ryan G. Van Cleave</p>
                 </div>
                 <BookCardFooter>
