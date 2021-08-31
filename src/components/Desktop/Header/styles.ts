@@ -34,10 +34,14 @@ export const Container = styled.header`
       font-size: 1.25rem;
       list-style-type: none;
 
+      padding: 5px;
+      border-radius: 5px;
+
       transition: filter 0.2s;
 
       &:hover {
-        filter: opacity(70%);
+        color: black;
+        background-color: ${(props) => props.theme.colors.infoCardText};
       }
     }
   }

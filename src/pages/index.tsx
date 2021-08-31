@@ -28,20 +28,13 @@ export default function Home() {
         <Container>
           <SearchInput />
 
-          {/* TODO:
-            slide bom,
-            style current read,
-            redirecionamento card,
-            mudar videos,
-          */}
-
           {search ? (
             <SearchResult />
           ) : (
             <Content>
               <Greeatings>
                 <h1>
-                  Hi, <span>Vinicius Page</span>👋
+                  Hi, <span>Vinicius Paes</span>👋
                 </h1>
               </Greeatings>
 

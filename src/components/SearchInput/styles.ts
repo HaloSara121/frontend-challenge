@@ -11,6 +11,7 @@ export const Container = styled.form`
   font-weight: 400;
   line-height: 3rem;
   box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.12);
+  
   img {
     width: 1rem;
     margin: 1rem;
@@ -22,9 +23,8 @@ export const Container = styled.form`
 
   @media (min-width: 1024px) {
     width: 400px;
-    margin: 2.2rem 1.25rem 1.6rem 18.75rem;
+    margin: 2.2rem 18.75rem 1.6rem 1.25rem;
   }
-
 `;
 
 export const SearchInputComponent = styled.input`
