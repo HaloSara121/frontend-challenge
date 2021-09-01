@@ -7,11 +7,6 @@ export function Header() {
   return (
     <Container>
       <div>
-        <Link href="/">
-          <a>
-            <h1>FotonBooks</h1>
-          </a>
-        </Link>
         <SearchInput />
         <nav>
           <ul>

@@ -24,7 +24,7 @@ export function ReviewVideos() {
           </a>
         </Link>
 
-        <Link href="https://www.youtube.com/watch?v=pNar3Dh9zDk">
+        <Link href="https://www.youtube.com/watch?v=md7S4tqRHXE">
           <a target="__blank">
             <img src="/assets/review.jpg" />
           </a>
