@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Link from "next/link";
 import { BiArrowBack } from "react-icons/bi";
-import { NavigationBooks } from "../../components/Mobile/NavigationBooks";
+import { NavigationBooks } from "../../layout/components/Mobile/NavigationBooks";
 import { api } from "../../services/api";
 import { BookType } from "../../types/Book";
 import { ContainerHeader, ContainerContent } from "../../styles/bookDetails";

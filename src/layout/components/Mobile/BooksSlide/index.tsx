@@ -7,11 +7,6 @@ export function MobileBooksSlide(){
   const containerDivRef = useRef<HTMLDivElement>(null)
   const { scrollXProgress } = useElementScroll(containerDivRef)
 
-  // {
-  //   scale: 1,
-  //   backgroundColor: "#00173D"
-  // }  
-
   const card1Scale = useTransform(scrollXProgress,
     [0, 0.250],
     [1, .9]

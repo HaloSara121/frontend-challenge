@@ -3,7 +3,7 @@ import { Container, BookCard, BookCardFooter } from "./styles";
 import Carousel from "react-elastic-carousel";
 
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";
-import { MobileBooksSlide } from "../Mobile/BooksSlide";
+import { MobileBooksSlide } from "../../layout/components/Mobile/BooksSlide";
 
 const breakPoints = [{ width: 374, itensToShow: 1 }];
 

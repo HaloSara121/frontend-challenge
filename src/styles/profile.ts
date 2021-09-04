@@ -5,29 +5,24 @@ export const Container = styled.main`
   max-width: 350px;
   margin: 0 auto;
   height: 400px;
-
   div {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-
   a {
     svg {
       margin: 3.125rem 0 0 0.9375rem;
     }
   }
-
   @media (min-width: 1024px) {
     a {
       svg {
         height: 25px;
         width: 25px;
-
         transition: background-color 0.2s;
         transition: border-radius 0.2s;
         transition: opacity 0.2s;
-
         &:hover {
           background-color: ${(props) => props.theme.colors.inputBackground};
           border-radius: 0.625rem;
@@ -36,7 +31,6 @@ export const Container = styled.main`
       }
     }
   }
-
   @media (min-width: 1024px) {
     max-width: 1120px;
     margin: 0 auto;
@@ -48,13 +42,11 @@ export const ProfileImageContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-
   margin-bottom: 1.25rem;
 `;
 
 export const OptionsContainer = styled.div`
   width: 90%;
-
   input {
     border: none;
     height: 3rem;
@@ -62,8 +54,7 @@ export const OptionsContainer = styled.div`
     padding: 0 1rem;
     border-radius: 0.6rem;
     margin-top: 0.625rem;
-    background-color: ${(props) => props.theme.colors.inputBackground};
-
+    background-color: ${(props) => props.theme.colors.header};
     &::placeholder {
       color: ${(props) => props.theme.colors.placeholder};
     }
@@ -72,9 +63,7 @@ export const OptionsContainer = styled.div`
 
 export const SwitchContainer = styled.div`
   margin: 30px 260px 20px 0;
-
   transition: filter 0.2s;
-
   @media (min-width: 1024px) {
     margin: 1.875rem 56.25rem 1.25rem 0;
   }

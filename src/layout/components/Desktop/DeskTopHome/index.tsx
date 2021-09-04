@@ -1,7 +1,7 @@
-import { useSearchResult } from "../../../hooks/useSearchResult";
-import { BooksSlide } from "../../BooksSlide";
-import { ReviewVideos } from "../../ReviewVideos";
-import { SearchResult } from "../../SearchResult";
+import { useSearchResult } from "../../../../hooks/useSearchResult";
+import { BooksSlide } from "../../../../common/BooksSlide";
+import { ReviewVideos } from "../../../../common/ReviewVideos";
+import { SearchResult } from "../../../../common/SearchResult";
 import { CurrentlyReadingDesktop } from "../CurrentlyReadingDesktop";
 import { Header } from "../Header";
 import { Container } from "./styles";

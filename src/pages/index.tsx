@@ -2,13 +2,13 @@ import Head from "next/head";
 import Link from "next/link";
 
 import { Container, Content, Greeatings, Heading } from "../styles/home";
-import { DeskTopHome } from "../components/Desktop/DeskTopHome";
-import { NavigationBar } from "../components/Mobile/NavigationBar";
-import { SearchInput } from "../components/SearchInput";
-import { BooksSlide } from "../components/BooksSlide";
-import { CurrentlyReading } from "../components/CurrentlyReading";
-import { ReviewVideos } from "../components/ReviewVideos";
-import { SearchResult } from "../components/SearchResult";
+import { DeskTopHome } from "../layout/components/Desktop/DeskTopHome";
+import { NavigationBar } from "../layout/components/Mobile/NavigationBar";
+import { SearchInput } from "../common/SearchInput";
+import { BooksSlide } from "../common/BooksSlide";
+import { CurrentlyReading } from "../common/CurrentlyReading";
+import { ReviewVideos } from "../common/ReviewVideos";
+import { SearchResult } from "../common/SearchResult";
 import { useWindowDimensions } from "../hooks/useWindowDimensions";
 import { useSearchResult } from "../hooks/useSearchResult";
 

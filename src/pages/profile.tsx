@@ -2,7 +2,7 @@ import Switch from "react-switch";
 import { ThemeContext } from "styled-components";
 import { useContext } from "react";
 import { useTheme } from "../hooks/useTheme";
-import { NavigationBar } from "../components/Mobile/NavigationBar";
+import Head from "next/head";
 import {
   Container,
   ProfileImageContainer,
@@ -11,8 +11,9 @@ import {
 } from "../styles/profile";
 
 import { useWindowDimensions } from "../hooks/useWindowDimensions";
-import { Header } from "../components/Desktop/Header";
-import Head from "next/head";
+import { Header } from "../layout/components/Desktop/Header";
+import { NavigationBar } from "../layout/components/Mobile/NavigationBar";
+import { CgProfile } from "react-icons/cg";
 
 export default function Profile() {
   const { width } = useWindowDimensions();
@@ -24,26 +25,21 @@ export default function Profile() {
 
   return (
     <>
-
       <Head>
         <title>Profile | FotonBooks</title>
       </Head>
-
       {!isMobile && <Header />}
 
       <Container>
         <div>
           <ProfileImageContainer>
-            <svg height="100" width="100">
-              <circle cx="50" cy="50" r="40" fill="#2c2c2e" />
-            </svg>
+            <CgProfile size="80" />
             <strong>Change profile picture</strong>
           </ProfileImageContainer>
 
           <OptionsContainer>
             <input type="text" placeholder="First name" />
             <input type="text" placeholder="Last name" />
-            <input type="text" placeholder="User name" />
           </OptionsContainer>
         </div>
         <SwitchContainer>

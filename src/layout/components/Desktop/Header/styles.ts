@@ -31,6 +31,8 @@ export const Container = styled.header`
 
     li {
       cursor: pointer;
+      font-family: Poppins;
+      font-weight: 600;
       font-size: 1.25rem;
       list-style-type: none;
 
@@ -44,5 +46,16 @@ export const Container = styled.header`
         background-color: ${(props) => props.theme.colors.infoCardText};
       }
     }
+  }
+`;
+
+
+export const SwitchContainer = styled.div`
+
+  transition: filter 0.2s;
+
+  .react-switch-handle{
+    width: 5px;
+    height: 5px;
   }
 `;

@@ -10,12 +10,14 @@ export const Container = styled.div`
 
 `;
 
-export const InfoCard = styled.a`
-  width: 331px;
+export const InfoCard = styled.div`
+  width: 993px;
   max-height: 100px;
 
   display: flex;
   align-items: center;
+
+  margin: auto;
 
   box-shadow: 0px 3px 45px 0px #798d431d;
 
@@ -23,7 +25,7 @@ export const InfoCard = styled.a`
 
   
   ${(props) => css`
-  background: ${props.theme.colors.infoCard};
+    background: ${props.theme.colors.infoCard};
   
     background-image: 
       url("/assets/rectangle.svg"),
@@ -32,7 +34,7 @@ export const InfoCard = styled.a`
 
     background-repeat: no-repeat;
 
-    background-position: 107% 65%, 110% -100% , 75% -7%;
+    background-position: 30% 65%, 60% -100% , 90% -7%;
 
     img { 
       width: 91px;
